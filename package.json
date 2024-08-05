@@ -1,0 +1,13 @@
+{
+  "name": "micro-services",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Andreaa-Dev/Microservices-practice.git",
+  "author": "andrea <ngocanhhsgs@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "services/*"
+  ],
+  "dependencies": {}
+}

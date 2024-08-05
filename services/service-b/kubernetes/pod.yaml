@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: service-b
+  labels:
+    app.kubernetes.io/name: service-b
+spec:
+  containers:
+    - name: service-b
+      image: andrea2000/serviceb
+      ports:
+        - containerPort: 5000
