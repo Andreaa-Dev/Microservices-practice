@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: service-b
+  labels:
+    app: service-b
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: service-b
+  template:
+    metadata:
+      labels:
+        app: service-b
+        app.kubernetes.io/name: service-b
+    spec:
+      containers:
+        - name: service-b
+          image: andrea2000/serviceb
+          ports:
+            - containerPort: 5000
